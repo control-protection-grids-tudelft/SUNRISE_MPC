@@ -7,7 +7,7 @@ This work has received funding from the European Union’s HORIZON-WIDERA-2021-A
 
 For the (re-)use of the content and libraries, please cite the paper as:
 ```
-"Deadbeat-Based Control for Mmc-Hvdc Power Systems," M. Majstorović, V. Nougain, L. Ristić and A. Lekić, International Journal of Electrical Power & Energy Systems, 2024.
+"Deadbeat-Based Control for MMC-HVDC Power Systems," M. Majstorović, V. Nougain, L. Ristić and A. Lekić, International Journal of Electrical Power & Energy Systems, 2024.
 ``` 
 
 Additionally, in case of using RSCAD/RTDS developed models, refer to the paper.
