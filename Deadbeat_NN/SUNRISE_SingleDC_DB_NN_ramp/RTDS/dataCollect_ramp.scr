@@ -1,0 +1,27 @@
+
+int b=1;
+function savefile2(int b) 
+{ 
+fprintf(stdmsg,"Saving plot data for positive idmode Case Number %d\n",b);
+SavePlotToCSV "currents","C:\Users\e451508\Documents\RSCAD\Milovan\SUNRISE_SingleDC_MPC-main_org_sub_mod\RTDS\results_ramp\data"::itoa(b)::".csv";
+return();
+}
+//Example Function
+
+
+
+// Use a for loop to change the Pref_CSA5P variable and save the plot
+SetSlider "Subsystem #1 : CTLs : Inputs : reset" = 1.0;
+SUSPEND 0.001;
+
+SetSlider "Subsystem #1 : CTLs : Inputs : reset" = 0.0;
+savefile2(1);  // Adding 1 to avoid starting from 0
+SetSlider "Subsystem #1 : CTLs : Inputs : enable" = 1.0;
+
+//UpdatePlots;
+// Save the plot data
+
+//SUSPEND 0.2;
+
+//SUSPEND 0.1;  // Give some time before the next iteration (adjust the time as needed)
+Stop;

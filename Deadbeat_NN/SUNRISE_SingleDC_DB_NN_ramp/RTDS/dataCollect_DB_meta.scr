@@ -1,0 +1,91 @@
+
+int b=1;
+function savefile2(int b) 
+{ 
+fprintf(stdmsg,"Saving plot data for positive idmode Case Number %d\n",b);
+SavePlotToCSV "collection_data","C:\Users\e451508\Documents\RSCAD\Milovan\SUNRISE_SingleDC_MPC-main_org_sub_mod\RTDS\data_collected_utorak\steady_state\data"::itoa(b)::".csv";
+return();
+}
+//Example Function
+function savefile2T(int b) 
+{ 
+fprintf(stdmsg,"Saving plot data for positive Trans idmode Case Number %d\n",b);
+SavePlotToCSV "collection_data","C:\Users\e451508\Documents\RSCAD\Milovan\SUNRISE_SingleDC_MPC-main_org_sub_mod\RTDS\meta_training\data"::itoa(b)::".csv";
+return();
+}
+
+
+float start_value = 0.1;     // Starting value for Pref_CSA5P
+float end_value = 3.0;       // Ending value for Pref_CSA5P (example value, adjust as needed)
+float increment = 0.1; 
+float current_value = 0.1; 
+int j = 1;      // Increment step for Pref_CSA5P
+
+int num_steps = (end_value - start_value) / increment;
+
+// Use a for loop to change the Pref_CSA5P variable and save the plot
+for (int i = 0; i <= num_steps; i++)
+{
+    // Set the value of Iref
+    current_value = start_value + (i * increment);
+    SetSlider "Subsystem #1 : CTLs : Inputs : Iref" = current_value;
+    savefile2T(j);
+    j++;
+    //float current_value2 = current_value * -1
+    //SUSPEND 0.1;  // Give some time for the system to react (adjust the time as needed)
+    SUSPEND 1.0;
+    // Save the plot data
+    //savefile2(i + 1);  // Adding 1 to avoid starting from 0
+
+    //SUSPEND 0.1;  // Give some time before the next iteration (adjust the time as needed)
+}
+
+for (int i = 0; i <= num_steps; i++)
+{
+    // Set the value of Iref
+    current_value = end_value - (i * increment);
+    SetSlider "Subsystem #1 : CTLs : Inputs : Iref" = current_value;
+    savefile2T(j);
+    j++;
+    //float current_value2 = current_value * -1
+    //SUSPEND 0.1;  // Give some time for the system to react (adjust the time as needed)
+    SUSPEND 1.0;
+    // Save the plot data
+    //savefile2(i + 1);  // Adding 1 to avoid starting from 0
+
+    //SUSPEND 0.1;  // Give some time before the next iteration (adjust the time as needed)
+}
+increment = 0.5;
+num_steps = (end_value - start_value) / increment;
+for (int i = 0; i <= num_steps; i++)
+{
+    // Set the value of Iref
+    current_value = start_value + (i * increment);
+    SetSlider "Subsystem #1 : CTLs : Inputs : Iref" = current_value;
+    savefile2T(j);
+    j++;
+    //float current_value2 = current_value * -1
+    //SUSPEND 0.1;  // Give some time for the system to react (adjust the time as needed)
+    SUSPEND 1.0;
+    // Save the plot data
+    //savefile2(i + 1);  // Adding 1 to avoid starting from 0
+
+    SUSPEND 0.1;  // Give some time before the next iteration (adjust the time as needed)
+}
+
+for (int i = 0; i <= num_steps; i++)
+{
+    // Set the value of Iref
+    current_value = end_value - (i * increment);
+    SetSlider "Subsystem #1 : CTLs : Inputs : Iref" = current_value;
+    savefile2T(j);
+    j++;
+    //float current_value2 = current_value * -1
+    //SUSPEND 0.1;  // Give some time for the system to react (adjust the time as needed)
+    SUSPEND 1.0;
+    // Save the plot data
+    //savefile2(i + 1);  // Adding 1 to avoid starting from 0
+
+    //SUSPEND 0.1;  // Give some time before the next iteration (adjust the time as needed)
+}
+Stop;
