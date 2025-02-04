@@ -1,1 +1,1 @@
-Folder COMPONENTS contains .def files neccesasary for user defined componentes used in RS-CAD models from this repositorium.
+Folder COMPONENTS contains .def files neccesasary for user defined componentes used in RS-CAD models from this repositorium. Source (.c) and header (.h) files for user defined components are in folder CMODEL_SOURCE.
