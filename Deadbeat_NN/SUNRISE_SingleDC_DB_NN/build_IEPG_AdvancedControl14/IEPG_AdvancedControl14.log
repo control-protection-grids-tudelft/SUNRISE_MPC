@@ -1,0 +1,13 @@
+MESSAGES:
+
+Compiling IEPG_AdvancedControl14 for RTDS rack 9...
+Nodes and Wires...
+
+RTDSPC version = 6.5
+=======================
+
+Using configuration file: D:\RSCAD\HDWR\config_file_03.txt
+Substep box "mmc": mainstep: 50000ns, Substep Divisor: 5, substep: 10000ns
+End of process. Peak memory usage = 13922304 bytes
+
+Compile completed successfully.

@@ -1,0 +1,119 @@
+CASE: C:\Users\e451508\Documents\RSCAD\Milovan\SUNRISE_SingleDC_MPC-main_org_sub_mod\RTDS\IEPG_AdvancedControl13 
+Delt: 50.000000 us
+Rack: 7 NoRealTime: 0 
+Distribution_mode: 0
+CVer: 4.0 
+RTDSPC_VERSION:  6.5
+String Desc="CircuitTitle Annotation" Group="Annotation" InitValue="Test Circuit"
+Output Desc="ref4_NA_FL" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020020 ComponentUUID=18808
+Output Desc="ref4_PA_FL" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020028 ComponentUUID=18809
+Output Desc="ref4_PB_FL" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020030 ComponentUUID=18852
+Output Desc="ref4_NB_FL" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020038 ComponentUUID=18860
+Output Desc="ref4_NC_FL" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020040 ComponentUUID=18874
+Output Desc="ref4_PC_FL" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020048 ComponentUUID=18893
+Output Desc="Vdvd4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020050 ComponentUUID=20271
+Output Desc="Vdvq4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020058 ComponentUUID=20271
+Output Desc="Ref_a4DV" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020060 ComponentUUID=19814
+Output Desc="Ref_b4DV" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020068 ComponentUUID=19814
+Output Desc="Ref_c4DV" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020070 ComponentUUID=19814
+Output Desc="carrier_d" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020078 ComponentUUID=19663
+Output Desc="E" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020080 ComponentUUID=21428
+Output Desc="wLpu4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020088 ComponentUUID=15597
+Output Desc="ref4_PA" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020090 ComponentUUID=18839
+Output Desc="d_t" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020098 ComponentUUID=19656
+Output Desc="VSUM" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510200A0 ComponentUUID=19827
+Output Desc="VAP4_S" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510200A8 ComponentUUID=20290
+Output Desc="Vaca4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510200B0 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21223
+Output Desc="Vacb4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510200D8 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21227
+Output Desc="Vacc4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020100 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21230
+Output Desc="NORDPA4_48" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020128 ComponentUUID=21502
+Output Desc="randA" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020130 ComponentUUID=21545
+Output Desc="randB" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020138 ComponentUUID=21559
+Output Desc="randC" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020140 ComponentUUID=21569
+Output Desc="Iref_factor" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020148 ComponentUUID=22480
+Output Desc="NORDNA4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=INT Min=0 Max=1 Rack=7 Adr=51020150 ComponentUUID=19383
+Output Desc="NORDNC4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=INT Min=0 Max=1 Rack=7 Adr=51020154 ComponentUUID=19387
+Output Desc="NORDPA4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=INT Min=0 Max=1 Rack=7 Adr=51020158 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=19393
+Output Desc="NORDPB4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=INT Min=0 Max=1 Rack=7 Adr=5102016C Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=19395
+Output Desc="NORDNB4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=INT Min=0 Max=1 Rack=7 Adr=51020180 ComponentUUID=19426
+Output Desc="NORDPC4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=INT Min=0 Max=1 Rack=7 Adr=51020184 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=19432
+Output Desc="carrierx10" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=INT Min=0 Max=1 Rack=7 Adr=51020198 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21034
+Output Desc="Ts" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510201B0 ComponentUUID=21408
+Output Desc="m4DV" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510201B8 ComponentUUID=19853
+Output Desc="wPLL4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510201C0 ComponentUUID=14874
+Output Desc="Ref_a4H4DV" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510201C8 ComponentUUID=19886
+Output Desc="angle4DV" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510201D0 ComponentUUID=19912
+Output Desc="angle_SH" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510201D8 ComponentUUID=21267
+Output Desc="Ia_ref_SH" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510201E0 ComponentUUID=21276
+Output Desc="Ia_ref" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510201E8 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21251
+Output Desc="Ib_ref" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020210 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21251
+Output Desc="Ic_ref" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020238 ComponentUUID=21251
+Output Desc="Iref" Group="Subsystem #1|Substep|mmc|CTLs|Inputs" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020240 ComponentUUID=21234
+Output Desc="Vdc" Group="Subsystem #1|Substep|mmc|CTLs|Inputs" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020248 ComponentUUID=21181
+Output Desc="carrier_n" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020250 ComponentUUID=19268
+Output Desc="carrier" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020258 ComponentUUID=19278
+Output Desc="V_c" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020260 ComponentUUID=18043
+Output Desc="V_b" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020268 ComponentUUID=18046
+Output Desc="V_a" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020270 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=18049
+Output Desc="ref4_PC" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020298 ComponentUUID=18718
+Output Desc="ref4_PB" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202A0 ComponentUUID=18729
+Output Desc="ref4_NC" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202A8 ComponentUUID=18747
+Output Desc="ref4_NA" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202B0 ComponentUUID=18820
+Output Desc="ref4_NB" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202B8 ComponentUUID=18821
+Output Desc="delta_main_ref4_PA" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202C0 ComponentUUID=18848
+Output Desc="NORDPA4_50" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202C8 ComponentUUID=18883
+Output Desc="delta_ref4_PA" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202D0 ComponentUUID=19310
+Output Desc="i_a1" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202D8 ComponentUUID=19636
+Output Desc="VCONBPU4DV" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202E0 ComponentUUID=19837
+Output Desc="VCONAPU4DV" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202E8 ComponentUUID=19885
+Output Desc="VCONCPU4DV" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202F0 ComponentUUID=19934
+Output Desc="Ia" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510202F8 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21200
+Output Desc="Ib" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020320 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21210
+Output Desc="Ic" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020348 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21217
+Output Desc="den" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020370 ComponentUUID=21419
+Output Desc="NORDPA4_49" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020378 ComponentUUID=21524
+Output Desc="NORDPA4_delta" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020380 ComponentUUID=21616
+Output Desc="angle" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020388 ComponentUUID=5148
+Output Desc="VSMA_AVG" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020390 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21465
+Output Desc="VSMB_AVG" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510203B8 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21468
+Output Desc="VSMC_AVG" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510203E0 Substeps=5 t2Substep=3 Substep_size=10.000000 ComponentUUID=21471
+Output Desc="tau" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020408 ComponentUUID=21417
+Output Desc="IdcCbA2P" Group="Subsystem #1|Substep|mmc|VDCP" Units="kA" Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020410 ComponentUUID=5387
+Output Desc="PWR5" Group="Subsystem #1|Substep|mmc|VDCP" Units="MW" Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020418 ComponentUUID=5387
+Output Desc="G1PACRT4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020420 ComponentUUID=5452
+Output Desc="VSMAU4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020428 ComponentUUID=5452
+Output Desc="VAP4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020430 ComponentUUID=5452
+Output Desc="G1NACRT4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020438 ComponentUUID=5451
+Output Desc="VSMAL4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020440 ComponentUUID=5451
+Output Desc="G1PBCRT4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020448 ComponentUUID=5453
+Output Desc="VSMBU4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020450 ComponentUUID=5453
+Output Desc="G1NBCRT4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020458 ComponentUUID=5454
+Output Desc="VSMBL4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020460 ComponentUUID=5454
+Output Desc="G1PCCRT4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020468 ComponentUUID=5455
+Output Desc="VSMCU4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020470 ComponentUUID=5455
+Output Desc="G1NCCRT4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020478 ComponentUUID=5456
+Output Desc="VSMCL4" Group="Subsystem #1|Substep|mmc|CTLs|Vars" Units=" " Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020480 ComponentUUID=5456
+Output Desc="S1) Vta4" Group="Subsystem #1|Substep|mmc|Node Voltages" Units="kV" Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020488 ComponentUUID=5392
+Output Desc="S1) VDCPOS4" Group="Subsystem #1|Substep|mmc|Node Voltages" Units="kV" Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020490 ComponentUUID=5396
+Output Desc="S1) Vtc4" Group="Subsystem #1|Substep|mmc|Node Voltages" Units="kV" Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=51020498 ComponentUUID=5390
+Output Desc="S1) Vtb4" Group="Subsystem #1|Substep|mmc|Node Voltages" Units="kV" Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510204A0 ComponentUUID=5391
+Output Desc="S1) 5" Group="Subsystem #1|Substep|mmc|Node Voltages" Units="kV" Type=DOUBLE Min=0.0000 Max=1.0000 Rack=7 Adr=510204A8 ComponentUUID=0
+Slider Desc="Iref" Group="Subsystem #1|CTLs|Inputs" Type=IEEE Units="kA" InitValue=1.000000 Min=0.000000 Max=2.000000 Rack=7 Adr=54004000 ComponentUUID=21234
+Slider Desc="PhaseAngleA2" Group="Subsystem #1|CTLs|Inputs" Type=IEEE Units="degrees" InitValue=1.000000 Min=-100.000000 Max=100.000000 Rack=7 Adr=54004008 ComponentUUID=5142
+Slider Desc="SL" Group="Subsystem #1|CTLs|Inputs" Type=IEEE Units="volts" InitValue=525.000000 Min=0.000000 Max=1000.000000 Rack=7 Adr=54004010 ComponentUUID=21181
+String Desc="Draft file" Group="Annotation" InitValue="Draft file: C:\Users\e451508\Documents\RSCAD\Milovan\SUNRISE_SingleDC_MPC-main_org_sub_mod\RTDS\IEPG_AdvancedControl13.rtfx"
+String Desc="Draft file modification date" Group="Time tags" InitValue="2024/12/13 13:31:42"
+String Desc="Compile date" Group="Time tags" InitValue="2024/12/13 13:31:43"
+
+
+CHECKSUM_INFORMATION:
+checksum_record: subsystem=1 checksum=A79E3369
+
+
+COMPONENT_TIMING_INFORMATION:
+timing_record: subsystem=1 processor=0 processor_type=NOVACOR
+timing_record: subsystem=1 processor=1 processor_type=NOVACOR
+timing_record: subsystem=1 processor=2 processor_type=NOVACOR
+timing_record: subsystem=1 processor=3 processor_type=NOVACOR
+timing_record: subsystem=1 processor=4 processor_type=NOVACOR
+timing_record: timing_name=mmc component_type=SUBSTEP subsystem=1 processor=0 processor_type=NOVACOR clock_index=0 enabled=true use=PSYS lf=300.000000

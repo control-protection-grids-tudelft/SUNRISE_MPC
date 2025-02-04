@@ -1,0 +1,1 @@
+timing_record: timing_name=mmc component_type=SUBSTEP subsystem=1 processor=0 processor_type=NOVACOR clock_index=0 enabled=true use=PSYS lf=300.000000
