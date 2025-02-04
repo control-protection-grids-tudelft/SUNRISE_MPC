@@ -1,0 +1,751 @@
+	.file	"OutputLv2_CS.c"
+
+ # rs6000/powerpc options: -msdata=sysv -G 8
+ # GNU C (GCC) version 4.6.0 (powerpc-750-linux-gnu)
+ #	compiled by GNU C version 4.5.2, GMP version 5.0.1, MPFR version 2.4.1, MPC version 0.8.1
+ # GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ # options passed:  -I D:\RSCAD\RSCAD FX 2.3\BIN\CMODEL_SOURCE\BLTIN_GCC
+ # -I D:\RSCAD\RSCAD FX 2.3\BIN\CMODEL_SOURCE\SHARED_CODE
+ # -iprefix d:\rscad\rscad fx 2.3\bin\mingw-cross\bin\../lib/gcc/powerpc-750-linux-gnu/4.6.0/
+ # -D__unix__ -D__gnu_linux__ -D__linux__ -Asystem=linux -Asystem=unix
+ # -Asystem=posix
+ # C:\Users\e451508\Documents\RSCAD\RTDS_USER_FX\BIN\CMODEL_SOURCE\OutputLv2_CS.c
+ # -mregnames -msdata=sysv -mtoc
+ # -auxbase-strip C:\Users\e451508\Documents\RSCAD\RTDS_USER_FX\BIN\CMODEL_SOURCE\OutputLv2_CS.s
+ # -O2 -Werror=implicit-function-declaration -Wno-error=main -std=c99
+ # -ffixed-r5 -fno-jump-tables -fomit-frame-pointer -fno-section-anchors
+ # -fverbose-asm -fno-builtin-sincos
+ # options enabled:  -fauto-inc-dec -fbranch-count-reg -fcaller-saves
+ # -fcombine-stack-adjustments -fcommon -fcompare-elim -fcprop-registers
+ # -fcrossjumping -fcse-follow-jumps -fdefer-pop
+ # -fdelete-null-pointer-checks -fdevirtualize -fdwarf2-cfi-asm
+ # -fearly-inlining -feliminate-unused-debug-types
+ # -fexpensive-optimizations -fforward-propagate -ffunction-cse -fgcse
+ # -fgcse-lm -fguess-branch-probability -fident -fif-conversion
+ # -fif-conversion2 -findirect-inlining -finline
+ # -finline-functions-called-once -finline-small-functions -fipa-cp
+ # -fipa-profile -fipa-pure-const -fipa-reference -fipa-sra
+ # -fira-share-save-slots -fira-share-spill-slots -fivopts
+ # -fkeep-static-consts -fleading-underscore -fmath-errno -fmerge-constants
+ # -fmerge-debug-strings -fmove-loop-invariants -fomit-frame-pointer
+ # -foptimize-register-move -foptimize-sibling-calls -fpartial-inlining
+ # -fpeephole -fpeephole2 -fprefetch-loop-arrays -freg-struct-return
+ # -fregmove -freorder-blocks -freorder-functions -frerun-cse-after-loop
+ # -fsched-critical-path-heuristic -fsched-dep-count-heuristic
+ # -fsched-group-heuristic -fsched-interblock -fsched-last-insn-heuristic
+ # -fsched-rank-heuristic -fsched-spec -fsched-spec-insn-heuristic
+ # -fsched-stalled-insns-dep -fschedule-insns -fschedule-insns2
+ # -fshow-column -fsigned-zeros -fsplit-ivs-in-unroller -fsplit-wide-types
+ # -fstrict-aliasing -fstrict-overflow -fstrict-volatile-bitfields
+ # -fthread-jumps -ftoplevel-reorder -ftrapping-math -ftree-bit-ccp
+ # -ftree-builtin-call-dce -ftree-ccp -ftree-ch -ftree-copy-prop
+ # -ftree-copyrename -ftree-cselim -ftree-dce -ftree-dominator-opts
+ # -ftree-dse -ftree-forwprop -ftree-fre -ftree-loop-if-convert
+ # -ftree-loop-im -ftree-loop-ivcanon -ftree-loop-optimize
+ # -ftree-parallelize-loops= -ftree-phiprop -ftree-pre -ftree-pta
+ # -ftree-reassoc -ftree-scev-cprop -ftree-sink -ftree-slp-vectorize
+ # -ftree-sra -ftree-switch-conversion -ftree-ter -ftree-vect-loop-version
+ # -ftree-vrp -funit-at-a-time -fverbose-asm -fzero-initialized-in-bss -m32
+ # -maix-struct-return -malign-branch-targets -malways-hint -mbig
+ # -mbig-endian -mblock-move-inline-limit= -mbss-plt -mfp-in-toc -mfriz
+ # -mgen-cell-microcode -mglibc -mhard-float -mminimal-toc -mnew-mnemonics
+ # -mpowerpc -msched-groups -msched-prolog -mtls-markers -mupdate
+ # -mvectorize-builtins -mvsx-scalar-double
+
+ # Compiler executable checksum: ef178d0e8295de2fcbfae800a9b9fd3e
+
+#APP
+	.section ".text"
+	.align 2
+	b .main
+#NO_APP
+	.section	.text.startup,"ax",@progbits
+	.align 2
+	.globl main
+	.type	main, @function
+main:
+	stwu %r1,-64(%r1)	 #,,
+	lwz %r9,Learning_rate@sdarel(%r13)	 # Learning_rate, Learning_rate.0
+	stw %r29,52(%r1)	 #,
+	lis %r29,.LC0@ha	 # tmp783,
+	lfd %f0,.LC0@l(%r29)	 #, tmp452
+	lfd %f13,0(%r9)	 # *Learning_rate.0_2, *Learning_rate.0_2
+	stw %r24,32(%r1)	 #,
+	stw %r25,36(%r1)	 #,
+	fcmpu %cr7,%f13,%f0	 # tmp456, *Learning_rate.0_2, tmp452
+	stw %r26,40(%r1)	 #,
+	stw %r27,44(%r1)	 #,
+	stw %r28,48(%r1)	 #,
+	stw %r30,56(%r1)	 #,
+	stw %r31,60(%r1)	 #,
+	bgt- %cr7,.L21	 #
+	lis %r31,b@ha	 # tmp786,
+	lwz %r30,Y@sdarel(%r13)	 # Y, Y
+	lwz %r6,N@sdarel(%r13)	 # N, N.2
+	la %r12,b@l(%r31)	 # tmp794,, tmp786
+.L2:
+	lwz %r9,input1@sdarel(%r13)	 # input1, input1
+	cmpwi %cr7,%r6,1	 #, tmp635, N.2
+	lis %r11,X@ha	 # tmp634,
+	lfd %f0,0(%r9)	 # *input1.44_194, D.2968
+	la %r9,X@l(%r11)	 # tmp633,, tmp634
+	stfd %f0,X@l(%r11)	 # X, D.2968
+	ble- %cr7,.L13	 #
+	lwz %r11,input2@sdarel(%r13)	 # input2, input2
+	cmpwi %cr7,%r6,2	 #, tmp639, N.2
+	lfd %f0,0(%r11)	 # *input2.45_196, D.2966
+	stfd %f0,8(%r9)	 # X, D.2966
+	beq- %cr7,.L13	 #
+	lwz %r11,input3@sdarel(%r13)	 # input3, input3
+	cmpwi %cr7,%r6,3	 #, tmp643, N.2
+	lfd %f0,0(%r11)	 # *input3.46_198, D.2964
+	stfd %f0,16(%r9)	 # X, D.2964
+	beq- %cr7,.L13	 #
+	lwz %r11,input4@sdarel(%r13)	 # input4, input4
+	cmpwi %cr7,%r6,4	 #, tmp647, N.2
+	lfd %f0,0(%r11)	 # *input4.47_200, D.2962
+	stfd %f0,24(%r9)	 # X, D.2962
+	beq- %cr7,.L13	 #
+	lwz %r11,input5@sdarel(%r13)	 # input5, input5
+	cmpwi %cr7,%r6,5	 #, tmp651, N.2
+	lfd %f0,0(%r11)	 # *input5.48_202, D.2960
+	stfd %f0,32(%r9)	 # X, D.2960
+	beq- %cr7,.L13	 #
+	lwz %r11,input6@sdarel(%r13)	 # input6, input6
+	cmpwi %cr7,%r6,6	 #, tmp655, N.2
+	lfd %f0,0(%r11)	 # *input6.49_204, D.2958
+	stfd %f0,40(%r9)	 # X, D.2958
+	beq- %cr7,.L13	 #
+	lwz %r11,input7@sdarel(%r13)	 # input7, input7
+	cmpwi %cr7,%r6,7	 #, tmp659, N.2
+	lfd %f0,0(%r11)	 # *input7.50_206, D.2956
+	stfd %f0,48(%r9)	 # X, D.2956
+	beq- %cr7,.L13	 #
+	lwz %r11,input8@sdarel(%r13)	 # input8, input8
+	cmpwi %cr7,%r6,8	 #, tmp663, N.2
+	lfd %f0,0(%r11)	 # *input8.51_208, D.2954
+	stfd %f0,56(%r9)	 # X, D.2954
+	beq- %cr7,.L13	 #
+	lwz %r11,input9@sdarel(%r13)	 # input9, input9
+	cmpwi %cr7,%r6,9	 #, tmp667, N.2
+	lfd %f0,0(%r11)	 # *input9.52_210, D.2952
+	stfd %f0,64(%r9)	 # X, D.2952
+	beq- %cr7,.L13	 #
+	lwz %r11,input10@sdarel(%r13)	 # input10, input10
+	lfd %f0,0(%r11)	 # *input10.53_212, D.2950
+	stfd %f0,72(%r9)	 # X, D.2950
+.L13:
+	cmpwi %cr7,%r30,2	 #, tmp672, Y
+	ble- %cr7,.L30	 #
+	cmpwi %cr7,%r6,0	 #, tmp719, N.2
+	lfd %f13,.LC0@l(%r29)	 #, tmp702
+	li %r0,0	 # tmp718,
+	stw %r0,i@sdarel(%r13)	 # i, tmp718
+	stfd %f13,preOutput@sdarel(%r13)	 # preOutput, tmp702
+	stfd %f13,preOutput2@sdarel(%r13)	 # preOutput2, tmp702
+	stfd %f13,preOutput3@sdarel(%r13)	 # preOutput3, tmp702
+	stfd %f13,preOutput4@sdarel(%r13)	 # preOutput4, tmp702
+	stfd %f13,preOutput5@sdarel(%r13)	 # preOutput5, tmp702
+	stfd %f13,preOutput6@sdarel(%r13)	 # preOutput6, tmp702
+	ble- %cr7,.L18	 #
+	slwi %r10,%r6,3	 # D.3151, N.2,
+	slwi %r4,%r6,1	 # D.3024, N.2,
+	fmr %f12,%f13	 # prephitmp.108, prephitmp.108
+	addi %r30,%r10,-8	 # tmp830, D.3151,
+	slwi %r8,%r6,2	 # D.3012, N.2,
+	fmr %f11,%f13	 # prephitmp.108, prephitmp.108
+	srwi %r30,%r30,3	 # tmp831, tmp830,
+	fmr %f10,%f13	 # prephitmp.108, prephitmp.108
+	add %r4,%r4,%r6	 # D.3018, D.3024, N.2
+	addi %r30,%r30,1	 #, tmp831,
+	fmr %f9,%f13	 # prephitmp.108, prephitmp.108
+	add %r8,%r8,%r6	 # D.3006, D.3012, N.2
+	fmr %f8,%f13	 # prephitmp.108, prephitmp.108
+	lis %r9,W-8@ha	 # tmp726,
+	lis %r11,X-8@ha	 # tmp727,
+	mtctr %r30	 # tmp828,
+	la %r9,W-8@l(%r9)	 # ivtmp.145,, tmp726
+	la %r11,X-8@l(%r11)	 # ivtmp.151,, tmp727
+	slwi %r3,%r6,4	 # tmp780, N.2,
+	slwi %r4,%r4,3	 # tmp781, D.3018,
+	slwi %r7,%r6,5	 # tmp782, N.2,
+	slwi %r8,%r8,3	 # tmp784, D.3006,
+.L19:
+	lfdu %f2,8(%r9)	 # MEM[(double[60] *)D.3133_391], MEM[(double[60] *)D.3133_391]
+	lfdu %f0,8(%r11)	 # MEM[(double[10] *)D.3134_251], D.3033
+	lfdx %f3,%r9,%r10	 # MEM[base: D.3133_391, index: D.3151_362, offset: 0B], MEM[base: D.3133_391, index: D.3151_362, offset: 0B]
+	lfdx %f4,%r9,%r3	 # MEM[base: D.3133_391, index: D.3140_278, offset: 0B], MEM[base: D.3133_391, index: D.3140_278, offset: 0B]
+	fmadd %f8,%f2,%f0,%f8	 # prephitmp.108, MEM[(double[60] *)D.3133_391], D.3033, prephitmp.108
+	lfdx %f5,%r9,%r4	 # MEM[base: D.3133_391, index: D.3143_396, offset: 0B], MEM[base: D.3133_391, index: D.3143_396, offset: 0B]
+	lfdx %f6,%r9,%r7	 # MEM[base: D.3133_391, index: D.3146_378, offset: 0B], MEM[base: D.3133_391, index: D.3146_378, offset: 0B]
+	fmadd %f9,%f0,%f3,%f9	 # prephitmp.108, D.3033, MEM[base: D.3133_391, index: D.3151_362, offset: 0B], prephitmp.108
+	lfdx %f7,%r9,%r8	 # MEM[base: D.3133_391, index: D.3149_380, offset: 0B], MEM[base: D.3133_391, index: D.3149_380, offset: 0B]
+	fmadd %f10,%f0,%f4,%f10	 # prephitmp.108, D.3033, MEM[base: D.3133_391, index: D.3140_278, offset: 0B], prephitmp.108
+	fmadd %f11,%f0,%f5,%f11	 # prephitmp.108, D.3033, MEM[base: D.3133_391, index: D.3143_396, offset: 0B], prephitmp.108
+	fmadd %f12,%f0,%f6,%f12	 # prephitmp.108, D.3033, MEM[base: D.3133_391, index: D.3146_378, offset: 0B], prephitmp.108
+	fmadd %f13,%f0,%f7,%f13	 # prephitmp.108, D.3033, MEM[base: D.3133_391, index: D.3149_380, offset: 0B], prephitmp.108
+	bdnz .L19	 #
+	stw %r6,i@sdarel(%r13)	 # i, N.2
+	stfd %f8,preOutput@sdarel(%r13)	 # preOutput, prephitmp.108
+	stfd %f9,preOutput2@sdarel(%r13)	 # preOutput2, prephitmp.108
+	stfd %f10,preOutput3@sdarel(%r13)	 # preOutput3, prephitmp.108
+	stfd %f11,preOutput4@sdarel(%r13)	 # preOutput4, prephitmp.108
+	stfd %f12,preOutput5@sdarel(%r13)	 # preOutput5, prephitmp.108
+	stfd %f13,preOutput6@sdarel(%r13)	 # preOutput6, prephitmp.108
+.L18:
+	lfd %f13,b@l(%r31)	 # b, b
+	lfd %f0,preOutput@sdarel(%r13)	 # preOutput, preOutput
+	lfd %f9,8(%r12)	 # b, b
+	lfd %f10,16(%r12)	 # b, b
+	fadd %f0,%f13,%f0	 # out1.76, b, preOutput
+	lfd %f13,preOutput2@sdarel(%r13)	 # preOutput2, preOutput2
+	lfd %f11,24(%r12)	 # b, b
+	lfd %f12,32(%r12)	 # b, b
+	fadd %f9,%f9,%f13	 # tmp750, b, preOutput2
+	lfd %f13,preOutput3@sdarel(%r13)	 # preOutput3, preOutput3
+	lfd %f8,40(%r12)	 # b, b
+	lwz %r9,foutput@sdarel(%r13)	 # foutput, foutput
+	fadd %f10,%f10,%f13	 # tmp755, b, preOutput3
+	lfd %f13,preOutput4@sdarel(%r13)	 # preOutput4, preOutput4
+	stfd %f9,out2@sdarel(%r13)	 # out2, tmp750
+	stfd %f0,out1@sdarel(%r13)	 # out1, out1.76
+	fadd %f11,%f11,%f13	 # tmp760, b, preOutput4
+	lfd %f13,preOutput5@sdarel(%r13)	 # preOutput5, preOutput5
+	stfd %f10,out3@sdarel(%r13)	 # out3, tmp755
+	fadd %f12,%f12,%f13	 # tmp765, b, preOutput5
+	lfd %f13,preOutput6@sdarel(%r13)	 # preOutput6, preOutput6
+	stfd %f11,out4@sdarel(%r13)	 # out4, tmp760
+	fadd %f13,%f8,%f13	 # tmp770, b, preOutput6
+	stfd %f12,out5@sdarel(%r13)	 # out5, tmp765
+	stfd %f13,out6@sdarel(%r13)	 # out6, tmp770
+	stfd %f0,0(%r9)	 # *foutput.16_49, out1.76
+	lwz %r9,foutput2@sdarel(%r13)	 # foutput2, foutput2
+	lfd %f0,out2@sdarel(%r13)	 # out2, out2.19
+	stfd %f0,0(%r9)	 # *foutput2.18_51, out2.19
+	lwz %r9,foutput3@sdarel(%r13)	 # foutput3, foutput3
+	lfd %f0,out3@sdarel(%r13)	 # out3, out3.21
+	stfd %f0,0(%r9)	 # *foutput3.20_53, out3.21
+	lwz %r9,foutput4@sdarel(%r13)	 # foutput4, foutput4
+	lfd %f0,out4@sdarel(%r13)	 # out4, out4.23
+	stfd %f0,0(%r9)	 # *foutput4.22_55, out4.23
+	lwz %r9,foutput5@sdarel(%r13)	 # foutput5, foutput5
+	lfd %f0,out5@sdarel(%r13)	 # out5, out5.25
+	stfd %f0,0(%r9)	 # *foutput5.24_57, out5.25
+	lwz %r9,foutput6@sdarel(%r13)	 # foutput6, foutput6
+	lfd %f0,out6@sdarel(%r13)	 # out6, out6.27
+	stfd %f0,0(%r9)	 #* foutput6, out6.27
+.L1:
+	lwz %r24,32(%r1)	 #,
+	lwz %r25,36(%r1)	 #,
+	lwz %r26,40(%r1)	 #,
+	lwz %r27,44(%r1)	 #,
+	lwz %r28,48(%r1)	 #,
+	lwz %r29,52(%r1)	 #,
+	lwz %r30,56(%r1)	 #,
+	lwz %r31,60(%r1)	 #,
+	addi %r1,%r1,64	 #,,
+	blr	 #
+.L30:
+	cmpwi %cr7,%r6,0	 #, tmp680, N.2
+	lfd %f13,.LC0@l(%r29)	 #, tmp675
+	li %r0,0	 # tmp679,
+	stw %r0,i@sdarel(%r13)	 # i, tmp679
+	stfd %f13,preOutput@sdarel(%r13)	 # preOutput, tmp675
+	stfd %f13,preOutput2@sdarel(%r13)	 # preOutput2, tmp675
+	ble- %cr7,.L15	 #
+	slwi %r10,%r6,3	 # D.3101, N.2,
+	fmr %f12,%f13	 # prephitmp.108, prephitmp.108
+	lis %r9,W-8@ha	 # tmp681,
+	addi %r8,%r10,-8	 # tmp826, D.3101,
+	lis %r11,X-8@ha	 # tmp682,
+	srwi %r8,%r8,3	 # tmp827, tmp826,
+	la %r9,W-8@l(%r9)	 # ivtmp.127,, tmp681
+	addi %r8,%r8,1	 #, tmp827,
+	la %r11,X-8@l(%r11)	 # ivtmp.133,, tmp682
+	mtctr %r8	 # tmp824,
+.L16:
+	lfdu %f10,8(%r9)	 # MEM[(double[60] *)D.3095_385], MEM[(double[60] *)D.3095_385]
+	lfdu %f0,8(%r11)	 # MEM[(double[10] *)D.3096_386], D.2984
+	lfdx %f11,%r9,%r10	 # MEM[base: D.3095_385, index: D.3101_375, offset: 0B], MEM[base: D.3095_385, index: D.3101_375, offset: 0B]
+	fmadd %f12,%f10,%f0,%f12	 # prephitmp.108, MEM[(double[60] *)D.3095_385], D.2984, prephitmp.108
+	fmadd %f13,%f0,%f11,%f13	 # prephitmp.108, D.2984, MEM[base: D.3095_385, index: D.3101_375, offset: 0B], prephitmp.108
+	bdnz .L16	 #
+	stw %r6,i@sdarel(%r13)	 # i, N.2
+	stfd %f12,preOutput@sdarel(%r13)	 # preOutput, prephitmp.108
+	stfd %f13,preOutput2@sdarel(%r13)	 # preOutput2, prephitmp.108
+.L15:
+	lfd %f13,b@l(%r31)	 # b, b
+	lfd %f0,preOutput@sdarel(%r13)	 # preOutput, preOutput
+	lfd %f12,8(%r12)	 # b, b
+	lwz %r9,foutput@sdarel(%r13)	 # foutput, foutput
+	fadd %f0,%f13,%f0	 # out1.60, b, preOutput
+	lfd %f13,preOutput2@sdarel(%r13)	 # preOutput2, preOutput2
+	fadd %f13,%f12,%f13	 # tmp697, b, preOutput2
+	stfd %f0,out1@sdarel(%r13)	 # out1, out1.60
+	stfd %f13,out2@sdarel(%r13)	 # out2, tmp697
+	stfd %f0,0(%r9)	 # *foutput.16_44, out1.60
+	lwz %r9,foutput2@sdarel(%r13)	 # foutput2, foutput2
+	lfd %f0,out2@sdarel(%r13)	 # out2, out2.19
+	stfd %f0,0(%r9)	 #* foutput2, out2.19
+	b .L1	 #
+.L21:
+	lwz %r30,Y@sdarel(%r13)	 # Y, Y
+	lis %r11,loss@ha	 # tmp795,
+	lwz %r10,L1@sdarel(%r13)	 # L1, L1
+	la %r31,loss@l(%r11)	 # tmp778,, tmp795
+	cmpwi %cr7,%r30,1	 #, tmp460, Y
+	lfd %f0,0(%r10)	 # *L1.28_88, D.2884
+	stfd %f0,loss@l(%r11)	 # loss, D.2884
+	ble- %cr7,.L4	 #
+	lwz %r11,L2@sdarel(%r13)	 # L2, L2
+	cmpwi %cr7,%r30,2	 #, tmp464, Y
+	lfd %f0,0(%r11)	 # *L2.29_90, D.2882
+	stfd %f0,8(%r31)	 # loss, D.2882
+	beq- %cr7,.L4	 #
+	lwz %r8,L3@sdarel(%r13)	 # L3, L3
+	cmpwi %cr6,%r30,3	 #, tmp468, Y
+	lfd %f0,0(%r8)	 # *L3.30_92, D.2880
+	stfd %f0,16(%r31)	 # loss, D.2880
+	beq- %cr6,.L6	 #
+	lwz %r8,L4@sdarel(%r13)	 # L4, L4
+	cmpwi %cr6,%r30,4	 #, tmp472, Y
+	lfd %f0,0(%r8)	 # *L4.31_94, D.2878
+	stfd %f0,24(%r31)	 # loss, D.2878
+	beq- %cr6,.L6	 #
+	lwz %r8,L5@sdarel(%r13)	 # L5, L5
+	cmpwi %cr6,%r30,5	 #, tmp476, Y
+	lfd %f0,0(%r8)	 # *L5.32_96, D.2876
+	stfd %f0,32(%r31)	 # loss, D.2876
+	beq- %cr6,.L6	 #
+	lwz %r8,L6@sdarel(%r13)	 # L6, L6
+	lfd %f0,0(%r8)	 # *L6.33_98, D.2874
+	stfd %f0,40(%r31)	 # loss, D.2874
+	ble- %cr7,.L4	 #
+.L6:
+	lwz %r6,N@sdarel(%r13)	 # N, N.2
+	li %r0,0	 # tmp530,
+	lfd %f6,0(%r9)	 # *Learning_rate.0_2, D.2599
+	cmpwi %cr7,%r6,0	 #, tmp531, N.2
+	lwz %r9,lam@sdarel(%r13)	 # lam, lam
+	lfd %f4,0(%r10)	 # *L1.4_12, D.2611
+	lfd %f5,0(%r11)	 # *L2.5_14, D.2613
+	lfd %f10,0(%r9)	 # *lam.3_19, D.2608
+	stw %r0,i@sdarel(%r13)	 # i, tmp530
+	ble- %cr7,.L11	 #
+	fmul %f8,%f4,%f6	 # D.2944, D.2611, D.2599
+	slwi %r11,%r6,3	 # D.3233, N.2,
+	lis %r9,.LC2@ha	 # tmp785,
+	addi %r8,%r11,-8	 # tmp835, D.3233,
+	lfs %f11,.LC2@l(%r9)	 #, tmp823
+	fmul %f7,%f5,%f6	 # D.2934, D.2613, D.2599
+	lis %r9,.LC0@ha	 # tmp803,
+	srwi %r8,%r8,3	 # tmp836, tmp835,
+	fneg %f10,%f10	 # tmp789, D.2608
+	lfd %f12,.LC0@l(%r9)	 #, tmp820
+	lis %r10,X-8@ha	 # tmp533,
+	addi %r8,%r8,1	 #, tmp836,
+	fneg %f8,%f8	 # tmp779, D.2944
+	lis %r9,W-8@ha	 # tmp532,
+	mtctr %r8	 # tmp833,
+	la %r9,W-8@l(%r9)	 # ivtmp.206,, tmp532
+	la %r10,X-8@l(%r10)	 # ivtmp.212,, tmp533
+	lis %r0,0x4330	 # tmp821,
+.L12:
+	lfdu %f13,8(%r9)	 # MEM[(double[60] *)D.3223_441], D.2947
+	stw %r0,16(%r1)	 #, tmp821
+	fcmpu %cr7,%f13,%f12	 # tmp545, D.2947, tmp820
+	lfdu %f0,8(%r10)	 # MEM[(double[10] *)D.3224_442], D.2943
+	stw %r0,24(%r1)	 #, tmp821
+	fmadd %f13,%f8,%f0,%f13	 # tmp539, tmp779, D.2943, D.2947
+	mfcr %r7	 # tmp544, tmp545
+	rlwinm %r7,%r7,30,1	 # tmp544,
+	fneg %f9,%f0	 # tmp563, D.2943
+	mfcr %r8	 # tmp550, tmp545
+	rlwinm %r8,%r8,29,1	 # tmp550,
+	subf %r8,%r8,%r7	 # tmp552, tmp550, tmp544
+	xoris %r8,%r8,0x8000	 #, tmp560, tmp552,
+	stw %r8,20(%r1)	 #, tmp560
+	lfd %f0,16(%r1)	 #, tmp559
+	fsub %f0,%f0,%f11	 # tmp553, tmp559, tmp823
+	fmadd %f13,%f10,%f0,%f13	 # tmp561, tmp789, tmp553, tmp539
+	stfd %f13,0(%r9)	 # MEM[(double[60] *)D.3223_441], tmp561
+	lfdx %f0,%r9,%r11	 # MEM[base: D.3223_441, index: D.3233_451, offset: 0B], D.2945
+	fcmpu %cr7,%f0,%f12	 # tmp570, D.2945, tmp820
+	fmadd %f0,%f9,%f7,%f0	 # tmp564, tmp563, D.2934, D.2945
+	mfcr %r7	 # tmp569, tmp570
+	rlwinm %r7,%r7,30,1	 # tmp569,
+	mfcr %r8	 # tmp575, tmp570
+	rlwinm %r8,%r8,29,1	 # tmp575,
+	subf %r8,%r8,%r7	 # tmp577, tmp575, tmp569
+	xoris %r8,%r8,0x8000	 #, tmp585, tmp577,
+	stw %r8,28(%r1)	 #, tmp585
+	lfd %f13,24(%r1)	 #, tmp584
+	fsub %f13,%f13,%f11	 # tmp578, tmp584, tmp823
+	fmadd %f0,%f10,%f13,%f0	 # tmp586, tmp789, tmp578, tmp564
+	stfdx %f0,%r9,%r11	 # MEM[base: D.3223_441, index: D.3233_451, offset: 0B], tmp586
+	bdnz .L12	 #
+	stw %r6,i@sdarel(%r13)	 # i, N.2
+.L11:
+	lis %r31,b@ha	 # tmp786,
+	fneg %f4,%f4	 # tmp590, D.2611
+	la %r12,b@l(%r31)	 # tmp794,, tmp786
+	lfd %f0,b@l(%r31)	 # b, b
+	fneg %f5,%f5	 # tmp597, D.2613
+	lfd %f13,8(%r12)	 # b, b
+	fmadd %f0,%f4,%f6,%f0	 # tmp593, tmp590, D.2599, b
+	fmadd %f6,%f5,%f6,%f13	 # tmp600, tmp597, D.2599, b
+	stfd %f0,b@l(%r31)	 # b, tmp593
+	stfd %f6,8(%r12)	 # b, tmp600
+	b .L7	 #
+.L4:
+	cmpwi %cr7,%r30,0	 #, tmp483, Y
+	lfd %f10,0(%r9)	 # *Learning_rate.0_2, D.2599
+	li %r0,0	 # tmp482,
+	lwz %r9,lam@sdarel(%r13)	 # lam, lam
+	lwz %r6,N@sdarel(%r13)	 # N, N.2
+	lfd %f7,0(%r9)	 # *lam.3_10, D.2608
+	stw %r0,i@sdarel(%r13)	 # i, tmp482
+	ble- %cr7,.L31	 #
+	lis %r27,X-8@ha	 # tmp810,
+	fneg %f10,%f10	 # tmp787, D.2599
+	cmpwi %cr1,%r6,0	 #, tmp777, N.2
+	lfd %f13,dW@sdarel(%r13)	 # dW, dW_lsm.121
+	fneg %f7,%f7	 # tmp816, D.2608
+	la %r27,X-8@l(%r27)	 # ivtmp.174,, tmp810
+	slwi %r7,%r6,3	 # tmp814, N.2,
+	lis %r3,b-8@ha	 # tmp484,
+	lis %r24,W@ha	 # tmp812,
+	la %r3,b-8@l(%r3)	 # ivtmp.188,, tmp484
+	slwi %r28,%r30,3	 # D.3201, Y,
+	li %r12,-1	 # ivtmp.201,
+	li %r4,0	 # ivtmp.189,
+	la %r24,W@l(%r24)	 # tmp813,, tmp812
+	add %r7,%r27,%r7	 # D.3178, ivtmp.174, tmp814
+	lis %r25,.LC0@ha	 # tmp817,
+	lis %r26,.LC2@ha	 # tmp818,
+	lis %r8,0x4330	 # tmp819,
+.L10:
+	lfdu %f0,8(%r3)	 # MEM[(double[6] *)D.3198_436], MEM[(double[6] *)D.3198_436]
+	lfdx %f11,%r31,%r4	 # MEM[symbol: loss, index: ivtmp.189_431, offset: 0B], D.2895
+	fmadd %f0,%f10,%f11,%f0	 # tmp488, tmp787, D.2895, MEM[(double[6] *)D.3198_436]
+	stfd %f0,0(%r3)	 # MEM[(double[6] *)D.3198_436], tmp488
+	ble- %cr1,.L20	 #
+	lfs %f8,.LC2@l(%r26)	 #, tmp808
+	slwi %r9,%r12,3	 # tmp492, ivtmp.201,
+	mr %r11,%r27	 # ivtmp.174, ivtmp.174
+	lfd %f9,.LC0@l(%r25)	 #, tmp805
+	add %r9,%r9,%r24	 # ivtmp.180, tmp492, tmp813
+.L9:
+	lfdu %f0,8(%r9)	 # MEM[(double[60] *)D.3172_424], D.2901
+	lfdu %f13,8(%r11)	 # MEM[(double[10] *)D.3171_423], MEM[(double[10] *)D.3171_423]
+	stw %r8,8(%r1)	 #, tmp819
+	fcmpu %cr7,%f0,%f9	 # tmp508, D.2901, tmp805
+	fmul %f13,%f11,%f13	 # dW_lsm.121, D.2895, MEM[(double[10] *)D.3171_423]
+	cmpw %cr6,%r11,%r7	 # D.3178, tmp525, ivtmp.174
+	fmadd %f0,%f10,%f13,%f0	 # tmp502, tmp787, dW_lsm.121, D.2901
+	mfcr %r10	 # tmp507, tmp508
+	rlwinm %r10,%r10,30,1	 # tmp507,
+	mfcr %r0	 # tmp513, tmp508
+	rlwinm %r0,%r0,29,1	 # tmp513,
+	subf %r0,%r0,%r10	 # tmp515, tmp513, tmp507
+	xoris %r0,%r0,0x8000	 #, tmp523, tmp515,
+	stw %r0,12(%r1)	 #, tmp523
+	lfd %f12,8(%r1)	 #, tmp522
+	fsub %f12,%f12,%f8	 # tmp516, tmp522, tmp808
+	fmadd %f0,%f7,%f12,%f0	 # tmp524, tmp816, tmp516, tmp502
+	stfd %f0,0(%r9)	 # MEM[(double[60] *)D.3172_424], tmp524
+	bne+ %cr6,.L9	 #
+	mr %r0,%r6	 # k_lsm.120, N.2
+.L8:
+	addi %r4,%r4,8	 # ivtmp.189, ivtmp.189,
+	add %r12,%r12,%r6	 # ivtmp.201, ivtmp.201, N.2
+	cmpw %cr7,%r4,%r28	 # D.3201, tmp526, ivtmp.189
+	bne+ %cr7,.L10	 #
+	stw %r0,k@sdarel(%r13)	 # k, k_lsm.120
+	lis %r31,b@ha	 # tmp786,
+	stfd %f13,dW@sdarel(%r13)	 # dW, dW_lsm.121
+	la %r12,b@l(%r31)	 # tmp794,, tmp786
+	stw %r30,i@sdarel(%r13)	 # i, Y
+.L7:
+	lis %r9,da@ha	 # tmp603,
+	lwz %r11,Li1@sdarel(%r13)	 # Li1, Li1
+	lfd %f0,da@l(%r9)	 # da, D.2615
+	la %r9,da@l(%r9)	 # tmp602,, tmp603
+	stfd %f0,0(%r11)	 # *Li1.6_21, D.2615
+	lwz %r11,Li2@sdarel(%r13)	 # Li2, Li2
+	lfd %f0,8(%r9)	 # da, D.2617
+	stfd %f0,0(%r11)	 # *Li2.7_23, D.2617
+	lwz %r11,Li3@sdarel(%r13)	 # Li3, Li3
+	lfd %f0,16(%r9)	 # da, D.2619
+	stfd %f0,0(%r11)	 # *Li3.8_25, D.2619
+	lwz %r11,Li4@sdarel(%r13)	 # Li4, Li4
+	lfd %f0,24(%r9)	 # da, D.2621
+	stfd %f0,0(%r11)	 # *Li4.9_27, D.2621
+	lwz %r11,Li5@sdarel(%r13)	 # Li5, Li5
+	lfd %f0,32(%r9)	 # da, D.2623
+	stfd %f0,0(%r11)	 # *Li5.10_29, D.2623
+	lwz %r11,Li6@sdarel(%r13)	 # Li6, Li6
+	lfd %f0,40(%r9)	 # da, D.2625
+	stfd %f0,0(%r11)	 # *Li6.11_31, D.2625
+	lwz %r11,Li7@sdarel(%r13)	 # Li7, Li7
+	lfd %f0,48(%r9)	 # da, D.2627
+	stfd %f0,0(%r11)	 # *Li7.12_33, D.2627
+	lwz %r11,Li8@sdarel(%r13)	 # Li8, Li8
+	lfd %f0,56(%r9)	 # da, D.2629
+	stfd %f0,0(%r11)	 # *Li8.13_35, D.2629
+	lwz %r11,Li9@sdarel(%r13)	 # Li9, Li9
+	lfd %f0,64(%r9)	 # da, D.2631
+	stfd %f0,0(%r11)	 # *Li9.14_37, D.2631
+	lfd %f0,72(%r9)	 # da, D.2633
+	lwz %r9,Li10@sdarel(%r13)	 # Li10, Li10
+	stfd %f0,0(%r9)	 # *Li10.15_39, D.2633
+	b .L2	 #
+.L20:
+	li %r0,0	 # k_lsm.120,
+	b .L8	 #
+.L31:
+	lis %r31,b@ha	 # tmp786,
+	la %r12,b@l(%r31)	 # tmp794,, tmp786
+	b .L7	 #
+	.size	main, .-main
+	.comm	dW,8,8
+	.globl da
+	.lcomm	da,80,8
+	.type	da, @object
+	.comm	lossy2,8,8
+	.comm	lossy1,8,8
+	.globl loss
+	.lcomm	loss,48,8
+	.type	loss, @object
+	.comm	dLoss_da2,48,8
+	.globl X1
+	.lcomm	X1,80,8
+	.type	X1, @object
+	.globl X
+	.lcomm	X,80,8
+	.type	X, @object
+	.comm	k,4,4
+	.comm	i,4,4
+	.comm	out6,8,8
+	.comm	out5,8,8
+	.comm	out4,8,8
+	.comm	out3,8,8
+	.comm	out2,8,8
+	.comm	out1,8,8
+	.globl preOutput6
+	.section	".sbss","aw",@nobits
+	.align 3
+preOutput6:
+	.zero	8
+	.size	preOutput6, 8
+	.type	preOutput6, @object
+	.globl preOutput5
+	.align 3
+preOutput5:
+	.zero	8
+	.size	preOutput5, 8
+	.type	preOutput5, @object
+	.globl preOutput4
+	.align 3
+preOutput4:
+	.zero	8
+	.size	preOutput4, 8
+	.type	preOutput4, @object
+	.globl preOutput3
+	.align 3
+preOutput3:
+	.zero	8
+	.size	preOutput3, 8
+	.type	preOutput3, @object
+	.globl preOutput2
+	.align 3
+preOutput2:
+	.zero	8
+	.size	preOutput2, 8
+	.type	preOutput2, @object
+	.globl preOutput
+	.align 3
+preOutput:
+	.zero	8
+	.size	preOutput, 8
+	.type	preOutput, @object
+	.comm	foutput6,4,4
+	.comm	foutput5,4,4
+	.comm	foutput4,4,4
+	.comm	foutput3,4,4
+	.comm	foutput2,4,4
+	.comm	Li10,4,4
+	.comm	Li9,4,4
+	.comm	Li8,4,4
+	.comm	Li7,4,4
+	.comm	Li6,4,4
+	.comm	Li5,4,4
+	.comm	Li4,4,4
+	.comm	Li3,4,4
+	.comm	Li2,4,4
+	.comm	Li1,4,4
+	.comm	foutput,4,4
+	.comm	L6,4,4
+	.comm	L5,4,4
+	.comm	L4,4,4
+	.comm	L3,4,4
+	.comm	L2,4,4
+	.comm	input10,4,4
+	.comm	input9,4,4
+	.comm	input8,4,4
+	.comm	input7,4,4
+	.comm	input6,4,4
+	.comm	input5,4,4
+	.comm	input4,4,4
+	.comm	input3,4,4
+	.comm	input2,4,4
+	.comm	lam,4,4
+	.comm	L1,4,4
+	.comm	input1,4,4
+	.comm	Learning_rate,4,4
+	.comm	activation,4,4
+	.comm	numOutputs,4,4
+	.comm	numInputs,4,4
+	.comm	Y,4,4
+	.comm	n,4,4
+	.comm	N,4,4
+	.globl b
+	.lcomm	b,48,8
+	.type	b, @object
+	.globl W
+	.section	".data"
+	.align 3
+	.type	W, @object
+	.size	W, 480
+W:
+	.long	-1081575721
+	.long	568678409
+	.long	1067165160
+	.long	-1302624411
+	.long	-1077298827
+	.long	-311623586
+	.long	-1077309953
+	.long	1193113053
+	.long	1067978137
+	.long	1169605494
+	.long	-1076836604
+	.long	-1588629375
+	.long	1070939424
+	.long	-942952167
+	.long	1069738750
+	.long	1353212941
+	.long	1071068220
+	.long	-29873731
+	.long	1067232155
+	.long	2042859619
+	.long	1069947822
+	.long	107158403
+	.long	1069636844
+	.long	-1793842226
+	.long	-1077225229
+	.long	189786702
+	.long	1070939383
+	.long	-1030110454
+	.long	-1079184914
+	.long	1868488070
+	.long	1071215924
+	.long	1602428246
+	.long	1068568528
+	.long	1469827144
+	.long	1070821140
+	.long	-704973870
+	.long	1071122896
+	.long	585995717
+	.long	1068045788
+	.long	1614654816
+	.long	-1077463798
+	.long	1306637628
+	.long	-1076898430
+	.long	1752863427
+	.long	-1076471992
+	.long	815485784
+	.long	1071070921
+	.long	147323563
+	.long	1069355080
+	.long	-847690480
+	.long	1070659683
+	.long	-191095121
+	.long	-1077314494
+	.long	1891489853
+	.long	1070822191
+	.long	-1208055416
+	.long	1069756529
+	.long	2003211230
+	.long	-1076675286
+	.long	-838212689
+	.long	-1077055534
+	.long	-516363646
+	.long	-1077713318
+	.long	2096702703
+	.long	-1076639030
+	.long	-1270628622
+	.long	1068496097
+	.long	-373328178
+	.long	-1078293111
+	.long	-1779735491
+	.long	1070918501
+	.long	1585352831
+	.long	1069693478
+	.long	739157687
+	.long	-1081005132
+	.long	-459035109
+	.long	1069617491
+	.long	2046466017
+	.long	-1076860134
+	.long	529590771
+	.long	-1076234600
+	.long	-837311090
+	.long	1071155442
+	.long	1467342248
+	.long	1069495814
+	.long	2000517426
+	.long	-1077785041
+	.long	578969838
+	.long	1068426167
+	.long	521179507
+	.long	-1076162880
+	.long	1467188316
+	.long	1067672346
+	.long	1452828694
+	.long	-1077737484
+	.long	356197787
+	.long	1069782564
+	.long	62936046
+	.long	1070853219
+	.long	-697750079
+	.long	1070280034
+	.long	1674402277
+	.long	1070236919
+	.long	-1953348377
+	.long	1067537900
+	.long	-963491044
+	.long	-1076296831
+	.long	-1078774838
+	.long	-1078417664
+	.long	1601592617
+	.long	1071287295
+	.long	838454582
+	.long	1069251363
+	.long	921093876
+	.long	1071313892
+	.long	-194976397
+	.long	-1077469700
+	.long	702324047
+	.long	1064435405
+	.long	-1511674557
+	.section	.rodata.cst8,"aM",@progbits,8
+	.align 3
+.LC0:
+	.long	0
+	.long	0
+	.section	.rodata.cst4,"aM",@progbits,4
+	.align 2
+.LC2:
+	.long	1501560836
+	.ident	"GCC: (GNU) 4.6.0"
+	.section	.note.GNU-stack,"",@progbits
