@@ -1,27 +1,29 @@
 # SUNRISE Project Libraries
 ## Deadbeat MPC with and without adaptiveness
-Repository with RTDS models for model predictive controlled HVDC electrical grid.
+Repository with RTDS models for model predictive controlled HVDC electrical grid. It contains two libraries:
+- deadbeat MPC control models in RTDS
+- deadbeat MPC with added adaptiveness using neural networks
 
 This work has received funding from the European Union’s HORIZON-WIDERA-2021-ACCESS-03 project SUNRISE under grant agreement No. 101079200.
 
 ![alt text](/sunrise-logo.jpeg?raw=true)
 
-For the (re-)use of the content and libraries, please cite the paper as:
+For the (re-)use of the content and libraries, please cite the following papers as:
 ```
 1. "Deadbeat-Based Control for MMC-HVDC Power Systems," M. Majstorović, V. Nougain, L. Ristić and A. Lekić, International Journal of Electrical Power & Energy Systems, 2024.
 
 2. 
 ``` 
 
-Additionally, in case of using RSCAD/RTDS developed models, refer to the paper.
+Additionally, in the case of using RSCAD/RTDS developed models, refer to the paper.
 ```
 A. Shetgaonkar, T. Karmokar, M. Popov, and A. Lekić, “Enhanced real-time multi-terminal
 HVDC power system benchmark models with performance evaluation strategies,” CIGRE Science & Engineering, vol. 32, pp. 1–29, 2024
 ```
 
 ## Contributors
-- Milovan Majstorović - design the whole controller, implementation, creator of the idea for both papers
-- Bogdan Brković - training of the neural network (NN) and identification of the NN implementation inside MPC 
-- Vaibhav Nougain - design and execution help 
-- Leposava Ristić - funding acquisition, review, and organization 
-- Aleksandra Lekić - funding acquisition, organization, idea, writing, and review
+- **Milovan Majstorović** - design the whole controller, implementation, creator of the idea for both papers
+- **Bogdan Brković** - training of the neural network (NN) and identification of the NN implementation inside MPC 
+- **Vaibhav Nougain** - design and execution help 
+- **Leposava Ristić** - funding acquisition, review, and organization 
+- **Aleksandra Lekić** - funding acquisition, organization, idea, writing, and review
