@@ -1,8 +1,8 @@
 # SUNRISE Project Libraries
-## Deadbeat MPC with and without adaptiveness
-Repository with RTDS models for model predictive controlled HVDC electrical grid. It contains two libraries:
-- deadbeat MPC control models in RTDS
-- deadbeat MPC with added adaptiveness using neural networks
+## Deadbeat-based Control for MMC-HVDC Power Systems with and without Adaptiveness
+Repository with RTDS models for model predictive controlled HVDC electrical grid. It contains two libraries in RSCAD/RTDS with accompanying files:
+- deadbeat-based control models for MMC-HVDC power systems
+- deadbeat-based control with added adaptiveness using neural networks for MMC-HVDC power systems
 
 This work has received funding from the European Union’s HORIZON-WIDERA-2021-ACCESS-03 project SUNRISE under grant agreement No. 101079200.
 
