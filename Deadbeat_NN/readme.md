@@ -4,7 +4,7 @@ Regarding the NN training, all necessary files are in folder NN_training.
 Follow the procedure:
   1. Open the IEPG_AdvancedControl13.rtfx from SUNRISE_SingleDC_DB_NN folder model in RS-CAD.
   2. Run the model and then execute the dataCollect_DB.scr script to collect the data required for model identification.
-  3. Place resulting .csv files into folder training_data\simulation_data\. For the next three steps relocate to the training_NN folder.
+  3. Place resulting .csv files into folder training_NN\simulation_data\. For the next three steps relocate to the training_NN folder.
   4. In MATLAB, go to the "optimization" folder and run the main file "optimization.m". This script performs the following procedures:
 	- reading all the waveforms from the spreadsheets in the "simulation_data" folder and calculating the R and L parameters,
 	- calculating optimal voltage increments for obtaining a current response most closely matching the reference
