@@ -7,7 +7,9 @@ This work has received funding from the European Union’s HORIZON-WIDERA-2021-A
 
 For the (re-)use of the content and libraries, please cite the paper as:
 ```
-"Deadbeat-Based Control for MMC-HVDC Power Systems," M. Majstorović, V. Nougain, L. Ristić and A. Lekić, International Journal of Electrical Power & Energy Systems, 2024.
+1. "Deadbeat-Based Control for MMC-HVDC Power Systems," M. Majstorović, V. Nougain, L. Ristić and A. Lekić, International Journal of Electrical Power & Energy Systems, 2024.
+
+2. 
 ``` 
 
 Additionally, in case of using RSCAD/RTDS developed models, refer to the paper.
@@ -17,4 +19,8 @@ HVDC power system benchmark models with performance evaluation strategies,” CI
 ```
 
 ## Contributors
-- Milovan Majstorović - design the whole controller, implementation, creator of the idea
+- Milovan Majstorović - design the whole controller, implementation, creator of the idea for both papers
+- Bogdan Brković - training of the neural network (NN) and identification of the NN implementation inside MPC 
+- Vaibhav Nougain - design and execution help 
+- Leposava Ristić - funding acquisition, review, and organization 
+- Aleksandra Lekić - funding acquisition, organization, idea, writing, and review
