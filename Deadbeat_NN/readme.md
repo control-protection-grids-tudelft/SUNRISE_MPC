@@ -1,5 +1,6 @@
 The COMPONENTS folder contains .def files required for user-defined components used in RS-CAD models from this repository. The corresponding source (.c) and header (.h) files for these components are located in the CMODEL_SOURCE folder.
 The SUNRISE_SingleDC_DB_NN folder contains RS-CAD simulation models featuring a single three-phase MMC connected to an RL load at the AC terminal.
+Regarding the NN training, all necessary files are in folder NN_training.
 Follow the procedure:
   1. Open the IEPG_AdvancedControl13.rtfx from SUNRISE_SingleDC_DB_NN folder model in RS-CAD.
   2. Run the model and then execute the dataCollect_DB.scr script to collect the data required for model identification.
