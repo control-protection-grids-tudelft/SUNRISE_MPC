@@ -14,12 +14,12 @@ For the (re-)use of the content and libraries, please cite the following papers 
 L. Ristić and A. Lekić, International Journal of Electrical Power & Energy Systems,
 vol. 167, no. 110583, June 2025.
 
-2. "{Neural Network Assisted Model Predictive Control of a Modular Multilevel Converter,"
+2. "Neural Network Assisted Model Predictive Control of a Modular Multilevel Converter,"
 M. Majstorović, B. Brković, L. Ristić, and A. Lekić, IEEE Transactions on Power Electronics,
 under review.
 ``` 
 
-Additionally, in the case of using RSCAD/RTDS developed models, refer to the paper.
+Additionally, in the case of using RSCAD/RTDS-developed models, refer to the paper.
 ```
 A. Shetgaonkar, T. Karmokar, M. Popov, and A. Lekić, “Enhanced real-time multi-terminal
 HVDC power system benchmark models with performance evaluation strategies,” CIGRE Science & Engineering, vol. 32, pp. 1–29, 2024
