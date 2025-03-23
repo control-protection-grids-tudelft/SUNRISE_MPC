@@ -11,9 +11,12 @@ This work has received funding from the European Union’s HORIZON-WIDERA-2021-A
 For the (re-)use of the content and libraries, please cite the following papers as:
 ```
 1. "Deadbeat-Based Control for MMC-HVDC Power Systems," M. Majstorović, V. Nougain,
-L. Ristić and A. Lekić, International Journal of Electrical Power & Energy Systems, 2024.
+L. Ristić and A. Lekić, International Journal of Electrical Power & Energy Systems,
+vol. 167, no. 110583, June 2025.
 
-2. 
+2. "{Neural Network Assisted Model Predictive Control of a Modular Multilevel Converter,"
+M. Majstorović, B. Brković, L. Ristić, and A. Lekić, IEEE Transactions on Power Electronics,
+under review.
 ``` 
 
 Additionally, in the case of using RSCAD/RTDS developed models, refer to the paper.
