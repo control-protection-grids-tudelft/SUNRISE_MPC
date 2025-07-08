@@ -6,7 +6,7 @@ Repository with RTDS models for model predictive controlled HVDC electrical grid
 
 This work has received funding from the European Union’s HORIZON-WIDERA-2021-ACCESS-03 project SUNRISE under grant agreement No. 101079200.
 
-![alt text](/sunrise-logo.jpeg?raw=true)    ![alt text](/eu_flag.jpg?raw=true)
+![alt text](/sunrise-logo.jpeg?raw=true)  $~~~~~~~~~~~~~~~~~~~~~~~~~~~~$   ![alt text](/eu_flag.jpg?raw=true)
 
 For the (re-)use of the content and libraries, please cite the following papers as:
 ```
