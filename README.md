@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/880810222.svg)](https://doi.org/10.5281/zenodo.18834992)
+
 ![alt text](/sunrise-logo.jpeg?raw=true)  $~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$   ![alt text](/eu_flag.jpg?raw=true)
 # SUNRISE Project Libraries
 ## Deadbeat-based Control for MMC-HVDC Power Systems with and without Adaptiveness
